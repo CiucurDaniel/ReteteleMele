@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/my_yellow_dark"
+    android:backgroundTint="@color/my_yellow_dark"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".view.AddNewRecipe">
+
+    <!-- NUME RETETA -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_text_hint_recipe_name_AddNewRecipeActivity"
+        app:hintTextColor="#B700FF"
+        android:textColorHint="#000000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/recipe_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-condensed"
+            android:textAlignment="center"
+            android:inputType="text"
+            android:textSize="25sp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numar de portii"
+        app:hintTextColor="#B700FF"
+        android:textColorHint="#000000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/servings_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-condensed"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:textSize="25sp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Durata (minute)"
+        app:hintTextColor="#B700FF"
+        android:textColorHint="#000000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/recipe_duration_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-condensed"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:textSize="25sp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Alege categorie -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/text_category_AddNewRecipe"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/categorie_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" />
+
+    </LinearLayout>
+
+    <!-- Alege durata -->
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:background="#eeeeee"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:hint="@string/hint_recipe_details_AddNewRecipeActivity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:importantForAutofill="no">
+    </EditText>
+
+
+    <Button
+        android:id="@+id/saveNewRecipeButton"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_add_new_recipe_AddNewRecipeActivity"
+        android:textSize="32sp"
+        android:fontFamily="sans-serif-condensed"
+        android:backgroundTint="@color/my_yellow_light"
+        android:textAllCaps="false"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

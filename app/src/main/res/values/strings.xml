@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">ReteteleMele</string>
+    <string name="button_see_recipes_MainActivity">Vezi retetele mele</string>
+    <string name="button_add_new_Recipe_MainActivity">Adauga o reteta noua</string>
+    <string name="text_category_AddNewRecipe">Categorie</string>
+    <string name="button_add_new_recipe_AddNewRecipeActivity">Adauga reteta noua</string>
+    <string name="hint_recipe_details_AddNewRecipeActivity">Scrie detaliile retetei aici</string>
+    <string name="edit_text_hint_recipe_name_AddNewRecipeActivity">Nume reteta</string>
+    <string name="text_servings_AddNewRecipeAcitivity">Portii</string>
+    <string name="contentDescrpiton_image_ViewRecipe">recipe_image</string>
+    <string name="Servings_VALUE_demo">5 portii</string>
+    <string name="text_duration_ViewRecipe">Durata:</string>
+    <string name="text_servings_ViewRecipe">Portii:</string>
+    <string name="text_view_descriere_ViewRecipe">  Descriere:</string>
+    <string name="demo_reteta">Se bat ouale se amestesteca se face reteta. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+
+    <!-- String resources for spinners -->
+    <string-array name="categorie_spinner">
+        <item>Prajituri/Desert</item>
+        <item>Paste</item>
+        <item>Aperitive</item>
+        <item>Supe/Ciorbe</item>
+        <item>Salate</item>
+    </string-array>
+
+    <string-array name="portii_spinner">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+</resources>

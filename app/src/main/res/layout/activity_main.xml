@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/my_yellow_dark">
+
+    <!-- MAIN SCREEN IMAGE -->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/chef"
+        android:layout_marginBottom="50dp"/>
+
+    <!-- VEZI RETETE BUTTON -->
+    <Button
+        android:id="@+id/seeRecipesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_see_recipes_MainActivity"
+        android:textSize="32sp"
+        android:fontFamily="sans-serif-condensed"
+        android:backgroundTint="@color/my_yellow_light"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <!-- ADAUGA RETETE NOI BUTTON -->
+    <Button
+        android:id="@+id/addNewRecipeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_add_new_Recipe_MainActivity"
+        android:textSize="32sp"
+        android:fontFamily="sans-serif-condensed"
+        android:backgroundTint="@color/my_yellow_light"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <!-- SET DE 3 IMAGINI -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/salad" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pasta" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/cake" />
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
