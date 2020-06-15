@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_yellow_dark"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".view.CategoryActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/my_yellow_light"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Categoria retetei:"
+        android:textColor="#000000"
+        android:textSize="28sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prajituri/Desert"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-condensed"
+        android:backgroundTint="@color/my_yellow_light"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paste/Pizza"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-condensed"
+        android:backgroundTint="@color/my_yellow_light"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aperitive"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-condensed"
+        android:backgroundTint="@color/my_yellow_light"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Supe/Ciorbe"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-condensed"
+        android:backgroundTint="@color/my_yellow_light"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="De post"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-condensed"
+        android:backgroundTint="@color/my_yellow_light"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salate"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-condensed"
+        android:backgroundTint="@color/my_yellow_light"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Peste"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-condensed"
+        android:backgroundTint="@color/my_yellow_light"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Altele"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-condensed"
+        android:backgroundTint="@color/my_yellow_light"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

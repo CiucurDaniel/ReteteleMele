@@ -44,22 +44,23 @@ public class MainActivity extends AppCompatActivity {
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
 
 
+        //User wants to see recipes
+        //show him an Ad then let him proceed to the next activity
+        //if the ad failed to load just move him straight to the new activity
         Button seeRecipes = findViewById(R.id.seeRecipesButton);
         seeRecipes.setOnClickListener(v -> {
             if (mInterstitialAd.isLoaded()) {
                 mInterstitialAd.show();
+
             } else {
-                Log.d("TAG", "The interstitial wasn't loaded yet.");
+
                 Toast.makeText(getApplicationContext(), "Ad not loaded", Toast.LENGTH_SHORT).show();
                 //TODO: Even is ad is not showing, move the user to the next screen and maybe retry loading an ad for next time.
+                startActivity(new Intent(MainActivity.this, CategoryActivity.class));
             }
         });
 
         mInterstitialAd.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                // Code to be executed when an ad finishes loading.
-            }
 
             @Override
             public void onAdFailedToLoad(int errorCode) {
@@ -68,18 +69,11 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onAdOpened() {
-                // Code to be executed when the ad is displayed.
-            }
-
-            @Override
             public void onAdClicked() {
                 // Code to be executed when the user clicks on an ad.
-            }
 
-            @Override
-            public void onAdLeftApplication() {
-                // Code to be executed when the user has left the app.
+                //TODO: Madalin, trebuie si in acest caz sa execut
+                // startActivity(new Intent(MainActivity.this, CategoryActivity.class));
             }
 
             @Override
@@ -87,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 // Code to be executed when the interstitial ad is closed.
                 // Load the next interstitial.
                 mInterstitialAd.loadAd(new AdRequest.Builder().build());
+                startActivity(new Intent(MainActivity.this, CategoryActivity.class));
             }
         });
     } //end-OnCreate
