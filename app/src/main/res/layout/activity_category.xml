@@ -22,6 +22,7 @@
         android:textSize="28sp" />
 
     <Button
+        android:id="@+id/desertButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Prajituri/Desert"
@@ -34,6 +35,7 @@
         android:layout_marginRight="20dp"/>
 
     <Button
+        android:id="@+id/pizzaButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Paste/Pizza"
@@ -46,6 +48,7 @@
         android:layout_marginRight="20dp"/>
 
     <Button
+        android:id="@+id/startersButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Aperitive"
@@ -58,6 +61,7 @@
         android:layout_marginRight="20dp"/>
 
     <Button
+        android:id="@+id/soupButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Supe/Ciorbe"
@@ -70,6 +74,7 @@
         android:layout_marginRight="20dp"/>
 
     <Button
+        android:id="@+id/postButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="De post"
@@ -82,6 +87,7 @@
         android:layout_marginRight="20dp"/>
 
     <Button
+        android:id="@+id/saladButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Salate"
@@ -94,6 +100,7 @@
         android:layout_marginRight="20dp"/>
 
     <Button
+        android:id="@+id/fishButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Peste"
@@ -106,6 +113,7 @@
         android:layout_marginRight="20dp"/>
 
     <Button
+        android:id="@+id/othersButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Altele"

@@ -3,6 +3,7 @@ package com.ciucurdaniel.romania.retetelemele.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
 
 import com.ciucurdaniel.romania.retetelemele.R;
 /*
@@ -11,9 +12,29 @@ and the Recipe list. With this screen we will do a filter so that the user will 
  */
 public class CategoryActivity extends AppCompatActivity {
 
+    Button desertButton;
+    Button pizzaButton;
+    Button startersButton;
+    Button soupButton;
+    Button postButton;
+    Button saladButton;
+    Button fishButton;
+    Button othersButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
+
+        //assign button to their view;
+        desertButton = findViewById(R.id.desertButton);
+        pizzaButton = findViewById(R.id.pizzaButton);
+        startersButton = findViewById(R.id.startersButton);
+        soupButton = findViewById(R.id.soupButton);
+        postButton = findViewById(R.id.postButton);
+        saladButton = findViewById(R.id.saladButton);
+        fishButton = findViewById(R.id.fishButton);
+        othersButton = findViewById(R.id.othersButton);
+
     }
 }
