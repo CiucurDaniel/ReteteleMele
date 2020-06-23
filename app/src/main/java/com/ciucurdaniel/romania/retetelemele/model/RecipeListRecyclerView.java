@@ -33,7 +33,7 @@ public class RecipeListRecyclerView extends AppCompatActivity {
         RecipeAdapter adapter = new RecipeAdapter();
         recyclerView.setAdapter(adapter);
 
-
+        //Works only with factory
 
         //recipeViewModel = new ViewModelProvider(this).get(RecipeViewModel.class);
         recipeViewModel = new RecipeViewModelFactory((Application) getApplicationContext()).create(RecipeViewModel.class);
