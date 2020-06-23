@@ -6,7 +6,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/my_yellow_dark"
     android:backgroundTint="@color/my_yellow_dark"
-    android:gravity="center"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".view.AddNewRecipe">
@@ -18,7 +17,8 @@
         android:layout_height="wrap_content"
         android:hint="@string/edit_text_hint_recipe_name_AddNewRecipeActivity"
         app:hintTextColor="#B700FF"
-        android:textColorHint="#000000">
+        android:textColorHint="#000000"
+        android:layout_marginTop="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/recipe_name"
@@ -39,7 +39,8 @@
         android:layout_height="wrap_content"
         android:hint="Numar de portii"
         app:hintTextColor="#B700FF"
-        android:textColorHint="#000000">
+        android:textColorHint="#000000"
+        android:layout_marginTop="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/servings_number"
@@ -60,7 +61,8 @@
         android:layout_height="wrap_content"
         android:hint="Durata (minute)"
         app:hintTextColor="#B700FF"
-        android:textColorHint="#000000">
+        android:textColorHint="#000000"
+        android:layout_marginTop="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/recipe_duration_time"
@@ -102,7 +104,7 @@
 
     <!-- Alege durata -->
 
-    <EditText
+    <!-- <EditText
         android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -115,13 +117,42 @@
         android:scrollbars="vertical"
         android:hint="@string/hint_recipe_details_AddNewRecipeActivity"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:importantForAutofill="no">
-    </EditText>
+        android:importantForAutofill="no" /> -->
 
+    <EditText
+        android:id="@+id/input_ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Scrie ingredientele aici"
+        android:fontFamily="sans-serif-condensed"
+        android:background="#FAFCCD"
+        android:minLines="5"
+        android:maxLines="5"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        />
+
+    <EditText
+        android:id="@+id/input_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/hint_recipe_details_AddNewRecipeActivity"
+        android:fontFamily="sans-serif-condensed"
+        android:background="#FAFCCD"
+        android:minLines="7"
+        android:maxLines="7"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        />
 
     <Button
         android:id="@+id/saveNewRecipeButton"
-        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/ic_textbook_32dp"
+        android:layout_marginTop="0dp"
         android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -130,5 +161,6 @@
         android:fontFamily="sans-serif-condensed"
         android:backgroundTint="@color/my_yellow_light"
         android:textAllCaps="false"/>
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>

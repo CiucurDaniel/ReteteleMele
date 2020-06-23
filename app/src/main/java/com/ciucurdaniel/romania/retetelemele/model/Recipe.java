@@ -4,6 +4,14 @@ Recipe model class
 
 A recipe contains the following information in it:
 
+    id
+    name
+    duration
+    servings
+    category
+    ingredients
+    description
+
  */
 
 import androidx.room.Entity;
@@ -17,13 +25,15 @@ public class Recipe {
     private int duration;
     private int servings;
     private String category;
+    private String ingredients;
     private String description;
 
-    public Recipe(String name, int duration, int servings, String category, String description) {
+    public Recipe(String name, int duration, int servings, String category, String ingredients, String description) {
         this.name = name;
         this.duration = duration;
         this.servings = servings;
         this.category = category;
+        this.ingredients = ingredients;
         this.description = description;
     }
 
@@ -74,5 +84,13 @@ public class Recipe {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getIngredients() {
+        return ingredients;
+    }
+
+    public void setIngredients(String ingredients) {
+        this.ingredients = ingredients;
     }
 }

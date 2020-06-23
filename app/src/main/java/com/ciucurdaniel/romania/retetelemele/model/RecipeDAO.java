@@ -26,5 +26,5 @@ public interface RecipeDAO {
     //TODO: See if this really works
 
     @Query("SELECT * FROM recipe_table WHERE category =:category ")
-    LiveData<List<Recipe>> getAllRecipesWithCategory(String category);
+    List<Recipe> getAllRecipesWithCategory(String category);
 }

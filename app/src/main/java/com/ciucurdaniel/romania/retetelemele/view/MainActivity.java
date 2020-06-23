@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             public void onAdClicked() {
                 // Code to be executed when the user clicks on an ad.
 
-                //TODO: Madalin, trebuie si in acest caz sa execut
+                //TODO: Question, trebuie si in acest caz sa execut
                 // startActivity(new Intent(MainActivity.this, CategoryActivity.class));
             }
 

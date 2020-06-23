@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/launcher_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".model.RecipeListRecyclerView"></activity>
         <activity android:name=".view.CategoryActivity" />
         <activity android:name=".view.ViewRecipe" /> <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
         <meta-data

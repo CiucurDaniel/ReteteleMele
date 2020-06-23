@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="12dp">
+
+    <!-- Here add the Contact Details-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/my_yellow_light"
+        android:gravity="center">
+
+        <!-- Name for the contact is here-->
+        <TextView
+            android:id="@+id/text_view_recipe_name_AD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spaghette miliagneze"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            android:textAlignment="center">
+        </TextView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>

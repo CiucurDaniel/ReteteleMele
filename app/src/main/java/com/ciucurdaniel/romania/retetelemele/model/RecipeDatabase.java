@@ -47,6 +47,11 @@ public abstract class RecipeDatabase extends RoomDatabase {
         @Override
         protected Void doInBackground(Void... voids) {
             //TODO: Create some sample recipes
+            Recipe reteta_1 = new Recipe("Spaghette miliagneze", 60, 2, "Pizza/Paste","1 rosie 1 paste pachet", "Punem la fiert spaghetele conform instructiunilor de pe pachet. Mezelurile le taiem julien si cascavalul il dam prin razatoare. Punem 3-4 picaturi de ulei intr-o tigaie si calim putin ciupercile. Doar pana se inmoaie dupa care adaugam si mezelurile. Lasam pe foc aproximativ 8-10 minute. Cele 6 linguri de bulion (rase) le dizolvam in aproximativ 400 ml de apa, sucul rezultat il turnam peste mezeluri (in loc de bulion + apa puteti folosi suc de rosii daca aveti). Lasam sa fiarba pana sosul scade si se ingroasa un pic (aproximativ 10 min).");
+            recipeDAO.insert(reteta_1);
+
+            Recipe reteta_2 = new Recipe("Spaghette bologneze", 40, 2, "Pizza/Paste", "1 rosie 1 paste pachet", "Punem la fiert spaghetele conform instructiunilor de pe pachet. Mezelurile le taiem julien si cascavalul il dam prin razatoare. Punem 3-4 picaturi de ulei intr-o tigaie si calim putin ciupercile. Doar pana se inmoaie dupa care adaugam si mezelurile. Lasam pe foc aproximativ 8-10 minute. Cele 6 linguri de bulion (rase) le dizolvam in aproximativ 400 ml de apa, sucul rezultat il turnam peste mezeluri (in loc de bulion + apa puteti folosi suc de rosii daca aveti). Lasam sa fiarba pana sosul scade si se ingroasa un pic (aproximativ 10 min).");
+            recipeDAO.insert(reteta_2);
             return null;
         }
     }
