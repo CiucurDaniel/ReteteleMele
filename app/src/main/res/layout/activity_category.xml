@@ -23,6 +23,7 @@
 
     <Button
         android:id="@+id/desertButton"
+        android:drawableStart="@drawable/ic_dessert_32dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Prajituri/Desert"
@@ -36,6 +37,7 @@
 
     <Button
         android:id="@+id/pizzaButton"
+        android:drawableStart="@drawable/ic_pizza_32dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Paste/Pizza"
@@ -49,6 +51,7 @@
 
     <Button
         android:id="@+id/startersButton"
+        android:drawableStart="@drawable/ic_fork_starters"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Aperitive"
@@ -62,6 +65,7 @@
 
     <Button
         android:id="@+id/soupButton"
+        android:drawableStart="@drawable/ic_soup_32dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Supe/Ciorbe"
@@ -75,6 +79,7 @@
 
     <Button
         android:id="@+id/postButton"
+        android:drawableStart="@drawable/ic_pepper_32dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="De post"
@@ -88,6 +93,7 @@
 
     <Button
         android:id="@+id/saladButton"
+        android:drawableStart="@drawable/ic_salad_32dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Salate"
@@ -101,6 +107,7 @@
 
     <Button
         android:id="@+id/fishButton"
+        android:drawableStart="@drawable/ic_fish_32dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Peste"
@@ -114,6 +121,7 @@
 
     <Button
         android:id="@+id/othersButton"
+        android:drawableStart="@drawable/ic_dough_32dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Altele"
