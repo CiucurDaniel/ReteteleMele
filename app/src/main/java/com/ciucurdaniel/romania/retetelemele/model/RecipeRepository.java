@@ -8,6 +8,11 @@ import androidx.lifecycle.LiveData;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
+/*
+Recipe Local Repository
+which
+ */
+
 public class RecipeRepository {
 
     private RecipeDAO recipeDAO;
@@ -42,7 +47,7 @@ public class RecipeRepository {
         return allRecipes;
     }
 
-    //TODO: Does this really work?
+    //TODO: Does this really work? Or de we need LiveData<>
     public List<Recipe> getAllRecipesWithCategoryEqual(String category) throws ExecutionException, InterruptedException {
         return new GetAllRecipesByCategoryAsync(recipeDAO).execute(category).get();
     }
@@ -114,8 +119,3 @@ public class RecipeRepository {
     }
 
 }//end-class
-
-
-/*
-
- */

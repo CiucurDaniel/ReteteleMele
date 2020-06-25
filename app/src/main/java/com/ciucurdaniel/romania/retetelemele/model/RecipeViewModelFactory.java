@@ -8,6 +8,11 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.ciucurdaniel.romania.retetelemele.viewmodel.RecipeViewModel;
 
+/*
+Factory class for creating ViewModels
+because normal creation does not work anymore
+no more  ViewModelProviders.of()
+ */
 public class RecipeViewModelFactory extends ViewModelProvider.AndroidViewModelFactory {
 
     private Application mApplication;
@@ -23,21 +28,3 @@ public class RecipeViewModelFactory extends ViewModelProvider.AndroidViewModelFa
         return (T) new RecipeViewModel(mApplication);
     }
 }
-
-/*
-    private Application mApplication;
-
-
-
-    public TeamViewModelFactory(Application application) {
-        super(application);
-        mApplication = application;
-
-    }
-
-
-    @Override
-    public <T extends ViewModel> T create(Class<T> modelClass) {
-        return (T) new TeamViewModel(mApplication);
-    }
- */

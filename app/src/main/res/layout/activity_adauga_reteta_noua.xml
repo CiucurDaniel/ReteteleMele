@@ -143,8 +143,8 @@
         android:hint="@string/hint_recipe_details_AddNewRecipeActivity"
         android:fontFamily="sans-serif-condensed"
         android:background="#FAFCCD"
-        android:minLines="7"
-        android:maxLines="7"
+        android:minLines="3"
+        android:maxLines="3"
         android:scrollbars="vertical"
         android:inputType="textMultiLine"
         />

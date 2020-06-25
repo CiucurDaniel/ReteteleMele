@@ -1,5 +1,6 @@
 package com.ciucurdaniel.romania.retetelemele.view;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -19,6 +20,10 @@ import com.google.android.gms.ads.MobileAds;
 Main activity has only two buttons and functionality for those
 Add new recipe - BUTTON
 View my recipes - BUTTON
+
+ViewMMyRecipes action will display an Interstitial ad to the user before
+moving him to the next screen
+
  */
 public class MainActivity extends AppCompatActivity {
 
