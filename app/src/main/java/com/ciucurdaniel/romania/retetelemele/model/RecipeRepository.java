@@ -47,7 +47,9 @@ public class RecipeRepository {
         return allRecipes;
     }
 
-    //TODO: Does this really work? Or de we need LiveData<>
+    public void deleteWithId(int id) { new DeleteRecipeWithId(recipeDAO).execute(id); }
+
+
     public List<Recipe> getAllRecipesWithCategoryEqual(String category) throws ExecutionException, InterruptedException {
         return new GetAllRecipesByCategoryAsync(recipeDAO).execute(category).get();
     }
@@ -59,6 +61,19 @@ public class RecipeRepository {
     //Result, the type of the result of the background computation.
 
 
+    private static class DeleteRecipeWithId extends AsyncTask<Integer, Void, Void> {
+        //static class cannot access no-static members directly so we will use a constructor
+        private RecipeDAO recipeDAO = null;
+
+        private DeleteRecipeWithId(RecipeDAO recipeDAO){
+            this.recipeDAO = recipeDAO;
+        }
+        @Override
+        protected Void doInBackground(Integer... integers) {
+            recipeDAO.deleteRecipeWithId(integers[0]);
+            return null;
+        }
+    }
 
     private static class GetAllRecipesByCategoryAsync extends AsyncTask<String, Void, List<Recipe> > {
         //static class cannot access no-static members directly so we will use a constructor

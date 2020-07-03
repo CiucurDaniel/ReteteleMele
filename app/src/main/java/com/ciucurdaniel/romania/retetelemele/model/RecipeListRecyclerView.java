@@ -67,8 +67,12 @@ public class RecipeListRecyclerView extends AppCompatActivity {
                 Intent intent = new Intent(RecipeListRecyclerView.this, ViewRecipe.class);
                 intent.putExtra(ViewRecipe.EXTRA_ID, recipe.getId());
                 intent.putExtra(ViewRecipe.EXTRA_NAME, recipe.getName());
+                intent.putExtra(ViewRecipe.EXTRA_DURATION, String.valueOf(recipe.getDuration()));
+                intent.putExtra(ViewRecipe.EXTRA_SERVINGS, String.valueOf(recipe.getServings()));
+                /*
                 intent.putExtra(ViewRecipe.EXTRA_DURATION, String.valueOf(recipe.getDuration()) + " minute");
                 intent.putExtra(ViewRecipe.EXTRA_SERVINGS, String.valueOf(recipe.getServings()) + " portii");
+                 */
                 intent.putExtra(ViewRecipe.EXTRA_INGREDIENTS, recipe.getIngredients());
                 intent.putExtra(ViewRecipe.EXTRA_DESCRIPTION, recipe.getDescription());
                 intent.putExtra(ViewRecipe.EXTRA_CATEGORY, recipe.getCategory());

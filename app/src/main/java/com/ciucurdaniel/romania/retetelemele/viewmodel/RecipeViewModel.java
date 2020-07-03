@@ -45,6 +45,7 @@ public class RecipeViewModel extends AndroidViewModel {
         return repository.getAllRecipesWithCategoryEqual(string);
     }
 
+    public void deleteById(int id) { repository.deleteWithId(id);  }
 
     public LiveData<List<Recipe>> getAllRecipes(){
         return allRecipes;

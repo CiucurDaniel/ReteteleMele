@@ -200,19 +200,41 @@
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
-        <Button
-            android:id="@+id/editRecipe"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Editeaza reteta"
-            android:textSize="24sp"
-            android:fontFamily="sans-serif-condensed"
-            android:backgroundTint="@color/my_yellow_light"
-            android:textAllCaps="false"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="20dp"/>
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/editRecipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editeaza"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-condensed"
+                android:backgroundTint="@color/my_yellow_light"
+                android:textAllCaps="false"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/deleteRecipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sterge"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-condensed"
+                android:backgroundTint="#ff0000"
+                android:textAllCaps="false"
+                android:background="@drawable/rounded_button"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"/>
+
+        </RelativeLayout>
+
     </LinearLayout>
 
 </ScrollView>

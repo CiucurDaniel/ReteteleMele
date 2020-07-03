@@ -12,7 +12,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
+
 
 import com.ciucurdaniel.romania.retetelemele.R;
 import com.ciucurdaniel.romania.retetelemele.model.Recipe;
@@ -63,7 +63,7 @@ public class AddNewRecipe extends AppCompatActivity implements AdapterView.OnIte
         arrayAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         categorySpinner.setAdapter(arrayAdapter);
 
-        //we need the view model here to add a contact
+        //we need the view model here to add a recipe
         addRecipeViewModel = new RecipeViewModelFactory((Application) getApplicationContext()).create(RecipeViewModel.class);
 
         Intent intent = getIntent();
@@ -129,7 +129,6 @@ public class AddNewRecipe extends AppCompatActivity implements AdapterView.OnIte
             startActivity(intent);
         }
 
-        //TODO: Add extra id for EDIT_REQUEST or ADD_REQUEST
     }
 
     //Function to update a recipe AN ALREADY EXISTING RECIPE
@@ -140,6 +139,8 @@ public class AddNewRecipe extends AppCompatActivity implements AdapterView.OnIte
         String ingredients = editTextIngredients.getText().toString();
         String description = editTextDescription.getText().toString();
         String category = categorySpinner.getSelectedItem().toString();
+
+        //TODO: Those are INTS !!! Duration and Servings
 
         if( name.trim().isEmpty() || servings.trim().isEmpty() || duration.trim().isEmpty() || ingredients.trim().isEmpty() || description.trim().isEmpty() || category.trim().isEmpty()){
             Toast.makeText(this, "Introdu toate datele in campuri", Toast.LENGTH_SHORT).show();
@@ -152,6 +153,8 @@ public class AddNewRecipe extends AppCompatActivity implements AdapterView.OnIte
 
         } else {
 
+            //fails when editing duration or servings
+            //deletes the recipe
             Recipe recipe = new Recipe(name, Integer.parseInt(duration), Integer.parseInt(servings), category, ingredients, description);
             recipe.setId(id);
             addRecipeViewModel.update(recipe);

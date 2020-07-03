@@ -23,8 +23,10 @@ public interface RecipeDAO {
     @Query("SELECT * FROM recipe_table")
     LiveData<List<Recipe>> getAllRecipes();
 
-    //TODO: See if this really works
 
     @Query("SELECT * FROM recipe_table WHERE category =:category ")
     List<Recipe> getAllRecipesWithCategory(String category);
+
+    @Query("DELETE FROM recipe_table WHERE id =:id")
+    void deleteRecipeWithId(int id);
 }
